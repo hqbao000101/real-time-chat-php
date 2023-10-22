@@ -111,6 +111,19 @@ body {
   top: 70%;
   transform: translateY(-50%);
   cursor: pointer;
+  transition: color 0.3s;
+}
+
+.form form .field i:hover {
+  color: #000;
+}
+
+.form form .field i:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.form form .field i#sign-up-eye-slash {
+  visibility: hidden;
 }
 
 .form .link {
