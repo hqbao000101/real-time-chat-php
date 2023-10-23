@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Realtime Chat PHP</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../style.css" />
     <!-- ! fontawesome -->
     <link
       rel="stylesheet"
@@ -16,24 +16,13 @@
   </head>
   <body>
     <div class="wrapper">
-      <section class="form signin">
+      <section class="form login">
         <!-- ! form header -->
         <header>Realtime Chat App</header>
 
         <!-- ! form body -->
         <form action="#">
           <div class="error-txt">This is an error message</div>
-          <!-- ! Name -->
-          <div class="name-details">
-            <div class="field input">
-              <label>First Name</label>
-              <input type="text" placeholder="First Name" />
-            </div>
-            <div class="field input">
-              <label>Last Name</label>
-              <input type="text" placeholder="Last Name" />
-            </div>
-          </div>
           <!-- ! Email -->
           <div class="field input">
             <label>Email Address</label>
@@ -42,14 +31,9 @@
           <!-- ! Password -->
           <div class="field input">
             <label>Password</label>
-            <input type="password" placeholder="Enter new password" id="sign-up-pass"/>
+            <input type="password" placeholder="Enter your password" />
             <i class="fas fa-eye"></i>
             <i class="fas fa-eye-slash"></i>
-          </div>
-          <!-- ! Image -->
-          <div class="field image">
-            <label>Select Image</label>
-            <input type="file" />
           </div>
           <!-- ! Button submit -->
           <div class="field button">
@@ -58,12 +42,12 @@
         </form>
 
         <!-- ! form footer -->
-        <div class="link">Already signed up? <a href="./pages/login.html">Login now</a></div>
+        <div class="link">Not yet signed up? <a href="../index.php">Register now</a></div>
 
       </section>
     </div>
 
     <!-- ! JS -->
-    <script src="./utils/pass-show-hide.js"></script>
+    <script src="../utils/pass-show-hide.js"></script>
   </body>
 </html>

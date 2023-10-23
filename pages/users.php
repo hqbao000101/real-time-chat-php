@@ -28,7 +28,7 @@
           <a href="#" class="logout">Logout</a>
         </header>
         <div class="search">
-          <span class="text">Select an user to start chat</span>
+          <span class="text">Select an user to start chatting</span>
           <input type="text" placeholder="Enter name to search..." />
           <button><i class="fas fa-search"></i></button>
         </div>
@@ -96,5 +96,8 @@
         </div>
       </section>
     </div>
+
+    <!-- ! JS -->
+    <script src="../utils/users.js"></script>
   </body>
 </html>
