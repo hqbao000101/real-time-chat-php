@@ -1,6 +1,6 @@
-const signUpPass = document.getElementById("sign-up-pass");
-const showPass = document.getElementById("sign-up-eye");
-const hidePass = document.getElementById("sign-up-eye-slash");
+const signUpPass = document.querySelector("form .input input[type='password']");
+const showPass = document.querySelector("form .input i.fa-eye");
+const hidePass = document.querySelector("form .input i.fa-eye-slash");
 
 showPass.onclick = () => {
   signUpPass.setAttribute("type", "text");
