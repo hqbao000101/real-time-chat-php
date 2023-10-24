@@ -14,7 +14,7 @@ include_once "../layouts/header.php";
       <header>
         <?php
         include_once "../php/config.php";
-        $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = '{$_SESSION['unique_id']}'");
+        $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
         if (mysqli_num_rows($sql) > 0) {
           $row = mysqli_fetch_assoc($sql);
         }
