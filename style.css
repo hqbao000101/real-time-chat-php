@@ -289,7 +289,6 @@ body {
 
 .chat-area header .back-icon:hover {
   color: #000;
-  animation: backIcon 1.5s infinite;
 }
 
 .chat-area header .back-icon:active {
@@ -402,24 +401,4 @@ body {
 
 .typing-area button:active {
   transform: scale(0.95);
-}
-
-/* ! keyframes */
-@keyframes backIcon {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  40% {
-    transform: translateX(-10px);
-    opacity: 0;
-  }
-  60% {
-    transform: translateX(10px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
