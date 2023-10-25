@@ -11,8 +11,14 @@ if (!empty($email) && !empty($password)) {
   if (mysqli_num_rows($sql) > 0) {
     $row = mysqli_fetch_assoc($sql);
     if (password_verify($password, $row['password'])) {
-      $_SESSION['unique_id'] = $row['unique_id'];
-      echo "succeed";
+      $status = "Active now";
+      $sql2 = mysqli_query($conn, "UPDATE users SET status='{$status}' WHERE unique_id={$row['unique_id']}");
+      if ($sql2) {
+        $_SESSION['unique_id'] = $row['unique_id'];
+        echo "succeed";
+      } else {
+        echo "Failed to update status in database";
+      }
     } else {
       echo "Password is incorrect";
     }
